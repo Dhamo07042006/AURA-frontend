@@ -1,0 +1,161 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  background: radial-gradient(circle at top, #fff8e1 0, #1b1b1b 55%, #050505 100%);
+  color: #fef5d0;
+}
+
+.aura-root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.aura-header {
+  padding: 0.9rem 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: radial-gradient(circle at top, rgba(15, 23, 42, 0.65), transparent);
+  backdrop-filter: blur(18px);
+  border-bottom: 1px solid rgba(255, 215, 0, 0.3);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+
+.aura-logo {
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: #fef5d0;
+}
+
+.aura-logo span {
+  color: #facc15;
+}
+
+.aura-nav {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.aura-nav a {
+  position: relative;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.aura-nav a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -0.25rem;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #FFC947, #E7A200);
+  border-radius: 999px;
+  transition: width 0.25s ease;
+}
+
+.aura-nav a:hover::after {
+  width: 100%;
+}
+
+.aura-user-name {
+  padding: 0.25rem 0.75rem;
+  border-radius: 999px;
+  background: rgba(15, 23, 42, 0.7);
+  border: 1px solid rgba(250, 204, 21, 0.7);
+  font-size: 0.8rem;
+  color: #fef5d0;
+}
+
+.aura-nav button {
+  border: 1px solid rgba(255, 215, 0, 0.45);
+  background: rgba(10, 10, 10, 0.85);
+  color: #fef5d0;
+  padding: 0.45rem 0.9rem;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.aura-nav button:hover {
+  background: radial-gradient(circle at top, #ffec8b 0, #8b6914 40%, #181818 100%);
+  color: #111;
+  box-shadow: 0 0 18px rgba(255, 215, 0, 0.5);
+}
+
+.aura-main {
+  flex: 1;
+  padding: 2rem;
+}
+
+.aura-card {
+  background: radial-gradient(circle at top left, rgba(255, 245, 191, 0.18), rgba(15, 10, 3, 0.95));
+  border-radius: 18px;
+  padding: 2rem;
+  border: 1px solid rgba(255, 215, 0, 0.35);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.85);
+  backdrop-filter: blur(16px);
+}
+
+.aura-card h1,
+.aura-card h2,
+.aura-card h3 {
+  color: #ffec8b;
+}
+
+.aura-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.25rem 0.75rem;
+  border-radius: 999px;
+  background: rgba(255, 215, 0, 0.12);
+  border: 1px solid rgba(255, 215, 0, 0.4);
+  font-size: 0.75rem;
+  color: #fef5d0;
+}
+
+.aura-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+
+.aura-stat-card {
+  background: radial-gradient(circle at top, rgba(255, 236, 139, 0.25), rgba(12, 8, 2, 0.95));
+  border-radius: 16px;
+  padding: 1.25rem 1.5rem;
+  border: 1px solid rgba(255, 215, 0, 0.4);
+}
+
+.aura-stat-label {
+  font-size: 0.8rem;
+  color: #f9e9a5;
+  opacity: 0.9;
+}
+
+.aura-stat-value {
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-top: 0.3rem;
+}
+
+.aura-muted {
+  font-size: 0.8rem;
+  color: rgba(255, 245, 191, 0.7);
+}

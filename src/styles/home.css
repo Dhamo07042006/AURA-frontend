@@ -1,0 +1,95 @@
+.aura-home {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.aura-hero {
+  padding: 2.5rem 2rem 1rem;
+}
+
+.aura-hero-content h1 {
+  font-size: 2.7rem;
+  max-width: 720px;
+  line-height: 1.1;
+}
+
+.aura-home-grid {
+  padding: 0 2rem 1.5rem;
+}
+
+.aura-landing-card {
+  background: rgba(15, 3, 60, 0.9);
+  border-radius: 18px;
+  padding: 1.6rem 1.5rem;
+  border: 1px solid rgba(245, 194, 66, 0.4);
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.85);
+  transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
+}
+
+.aura-landing-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 22px 48px rgba(0, 0, 0, 0.95);
+  border-color: rgba(255, 218, 104, 0.8);
+}
+
+.aura-landing-card h2 {
+  font-size: 1.25rem;
+  margin-bottom: 0.35rem;
+}
+
+.aura-landing-card p {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.82);
+}
+
+.aura-landing-card .aura-stat {
+  font-weight: 600;
+  color: #facc15;
+}
+
+.aura-landing-card .aura-note {
+  margin-top: 0.45rem;
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.78);
+}
+
+.aura-landing-card--gold {
+  border-color: rgba(250, 204, 21, 0.7);
+}
+
+.aura-landing-card--silver {
+  border-color: rgba(191, 219, 254, 0.7);
+}
+
+.aura-landing-card--images {
+  display: flex;
+  flex-direction: column;
+}
+
+.home-metal-images {
+  display: flex;
+  gap: 1rem;
+  margin-top: 0.75rem;
+}
+
+.home-metal-image {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.home-metal-image img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 14px;
+  border: 1px solid rgba(248, 250, 252, 0.2);
+  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.8);
+}
+
+.home-metal-image span {
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.8);
+}
