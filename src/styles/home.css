@@ -93,3 +93,28 @@
   font-size: 0.8rem;
   color: rgba(255, 255, 255, 0.8);
 }
+
+@media (max-width: 768px) {
+  .aura-hero {
+    padding: 1.75rem 1rem 0.75rem;
+  }
+
+  .aura-hero-content h1 {
+    font-size: 2.1rem;
+  }
+
+  .aura-home-grid,
+  .aura-hero,
+  .aura-home {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .home-metal-images {
+    flex-direction: column;
+  }
+
+  .home-metal-image img {
+    height: 160px;
+  }
+}

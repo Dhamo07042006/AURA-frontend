@@ -97,3 +97,27 @@
   box-shadow: 0 20px 44px rgba(245, 194, 66, 0.7);
   filter: brightness(1.05);
 }
+
+@media (max-width: 768px) {
+  .aura-header {
+    padding: 0 1rem;
+  }
+
+  .aura-main {
+    padding: 1.25rem 1rem 1.75rem;
+  }
+
+  .aura-page-shell {
+    max-width: 100%;
+  }
+
+  .aura-pill {
+    font-size: 0.7rem;
+    padding: 0.2rem 0.7rem;
+  }
+
+  .aura-gold-button {
+    width: 100%;
+    text-align: center;
+  }
+}
