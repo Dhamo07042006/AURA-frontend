@@ -192,3 +192,24 @@ body {
     padding: 1.5rem 1.25rem;
   }
 }
+
+@media (max-width: 480px) {
+  .aura-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .aura-nav {
+    width: 100%;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    margin-top: 0.4rem;
+  }
+
+  .aura-nav a,
+  .aura-nav button,
+  .aura-user-name {
+    font-size: 0.78rem;
+  }
+}
